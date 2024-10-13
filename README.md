@@ -6,12 +6,8 @@ This project performs sentiment analysis on product reviews from Sephora, catego
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Steps Taken](#steps-taken)
 - [Results](#results)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 ## Technologies Used
 - Python
@@ -26,9 +22,18 @@ This project performs sentiment analysis on product reviews from Sephora, catego
 The dataset used in this project consists of product reviews from Sephora. The dataset includes the following columns:
 - `review`: The text of the product review.
 - `rating`: The rating given by the user (1-5).
-- `cleaned_text`: The cleaned text after preprocessing.
 
 The dataset can be found on kaggle:
 https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews
 
-The python file is included in the main. Outputs are included in a separate folder named outputs. 
+The python file is included in the main. Outputs are included in separate files.
+
+## Results
+Logistic Regression Accuracy: 0.88 or 88%
+Naive Bayes Accuracy: 0.84 or 84%
+
+## Future Improvements
+Data Augmentation: Increase the number of Neutral sentiment samples for better model learning.
+Advanced Algorithms: Experiment with more complex models (e.g., XGBoost, neural networks).
+Hyperparameter Tuning: Optimize model parameters for better overall performance.
+Enhanced Feature Engineering: Consider using embeddings (Word2Vec, BERT) for improved text representation.
